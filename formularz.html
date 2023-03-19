@@ -1,33 +1,107 @@
-<!DOCTYPE HTML>
-<HTML>
-    <HEAD>
-        <meta language="pl">
-        <style>
-            
-            input{
-                align-self: flex-start;
-                margin-right: auto;
-            }
-            .center {
-                margin: auto;
-                width: 50%;
-                padding: 10px;
-            }
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<a href="https://a-ciesielski-projekt1.ct8.pl/">Powrót</a>
 
-        </style>
-    </HEAD>
-    <BODY>
-        <h1>
-            Oto formularz do uzupełnienia danych osobowych
-        </h1>
-        
-        <div style="display: inline-table; align-self: center;">
-        
-            Input <input type="text">
+<div class="main">
+    <form action="https://a-ciesielski-projekt1.ct8.pl/">
+        <div>
+        <div class="forms">
+            <div class="labelsone">
+            <label>Imię:</label>
             
+        
+            <input type="text" id="imie" name="imie" />
         </div>
-        <br>
-        <a href="index.html">Strona Początkowa</a>
+        <div class="labelstwo">
+            <label>Nazwisko:</label>
+        
+            <input type="text" id="nazwisko" name="nazwisko" />
+        </div>
+        <div class="labelsone">
+            <label>Ulica:</label>
+       
+            <input type="text"id="ulica" name="ulica" />
+        </div>
+        <div class="labelstwo">
+            <label>Numer domu:</label>
+       
+            <input type="text"id="numerdomu" name="numerdomu" />
+        </div>
+        <div class="labelsone">
+            <label>Miasto:</label>
+          
+            <input type="text" id="miasto" name="Miasto" />
+        </div>
+        <div class="labelstwo">
+            <label>Kod pocztowy:</label>
+        
+           <input type="text" id="kodpocztowy" name="kodpocztowy" pattern="[0-9]{2}-{0-9}{3}" maxlength="6" required placeholder="xx-xxx"> 
+        </div>
+         <div class="labelsone">
+            <label>PESEL:</label><br>
+        
+        
+             <input type="text" id="PESEL" pattern="[0-9]{9}" maxlength="9" required placeholder="xxxxxxxxx">
+       </div>
+       <div class="labelstwo" >
+            <label>Kategoria prawa jazdy:</label> <br>
+        
+            <input type="checkbox" id="prawojazdya" name="prawojazdya" value="A">A<br>
+            <input type="checkbox" id="prawojazdyb" name="prawojazdyb" value="B">B<br>
+            <input type="checkbox" id="prawojazdyc"name="prawojazdyc" value="C">C<br>
+        
+            <input type="checkbox" id="prawojazdyce"name="prawojazdybce" value="C+E">C+E<br>
+          
+        </div>
+        <div class="labelsone">
+            <p>Podaj swoją płeć:</p>
+            <input type="radio" name="Plec" value="Kobieta">Kobieta
+            <input type="radio" name="Plec" value="Mezczyzna">Mężczyzna
+        </div>
+       <div class="labelstwo">
+       <label for="phone">Numer telefonu:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{3}"required maxlength="11"
+      placeholder="xxx xxx xxx">
+          </div>
+        <div class="labelsone">
+            <label>Data:</label>
+       
+            <input type="date" id="data" name="data">
+        </div>
+        <div class="labelstwo">
+            <label>Email:</label>
+       
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="labelsone">
+            <label>Uwagi</label>
+        
+            <textarea id="uwagi" name="uwagi" rows="4" cols="50">
+                
+                </textarea>
+        </div>
+      <div class="submition">
+        <a href="https://a-ciesielski-projekt1.ct8.pl/">
+      <input type="submit">
+         
+       </a>
+        </div>
+  
+ 
+    </div> 
+    </form>
+</div>
+</body>
 
-    </BODY>
-</HTML>
+
+
+
+
+</html>
