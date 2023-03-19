@@ -1,0 +1,27 @@
+name: Build Website on Push to pr3 Branch
+
+on:
+  push:
+    branches:
+      - pr3
+
+jobs:
+  build-website:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Build Website
+      run: |
+        # replace this with the command to build your website
+        echo "Building website..."
+    - name: Commit and Push Changes
+      uses: EndBug/add-and-commit@v7
+      with:
+        author_name: Bauero
+        author_email: piotr.bauer.konto@gmail.com
+        message: "Automatic website build on push to pr3 branch"
+      env:
+        GITHUB_TOKEN: ${{ secrets.UPLOAD_WEBSIDE }}
