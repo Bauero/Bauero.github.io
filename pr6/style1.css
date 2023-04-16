@@ -1,0 +1,23 @@
+
+input[type="text"], input[type="email"], input[type="password"], textarea
+{
+	width: 100%;
+	background-color: #eee;
+	margin-top: 4px;
+	margin-bottom: 8px;
+}
+
+.wycentrowane
+{
+	display: flex;
+    justify-content: center;
+    margin: auto;
+	
+}
+.obramowanie
+{
+	padding: 20px;
+	margin: 0 auto;
+	border: 1em solid black;
+	background-color: #f9f9f9;
+}
