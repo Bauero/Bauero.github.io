@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projekt 4 - Kalkulator</title>
+    </head>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+
+    <body>
+
+        <H3>
+            Piotr Bauer - Kalkulator
+        </H3>
+
+        <div>
+            <div>
+                <div class="resultbox">
+                    <div id="result" style="height: 60px;"></div>
+                </div>
+            </div>
+            
+            <br>
+    
+            <div class="numpad">
+                <div style="width: 100%;">
+                    <button name="1" onclick="wpisz(this)">1</button>
+                    <br>
+                    <br>
+                    <button name="4" onclick="wpisz(this)">4</button>
+                    <br>
+                    <br>
+                    <button name="7" onclick="wpisz(this)">7</button>
+                    <br>
+                    <br>
+                    <button name="0" onclick="wpisz(this)">0</button>
+                </div>
+                <div style="width: 100%;">
+                    <button name="2" onclick="wpisz(this)">2</button>
+                    <br>
+                    <br>
+                    <button name="5" onclick="wpisz(this)">5</button>
+                    <br>
+                    <br>
+                    <button name="8" onclick="wpisz(this)">8</button>
+                    <br>
+                    <br>
+                    <button name="." onclick="wpisz(this)">.</button>
+                </div>
+                <div style="width: 100%;">
+                    <button name="3" onclick="wpisz(this)">3</button>
+                    <br>
+                    <br>
+                    <button name="6" onclick="wpisz(this)">6</button>
+                    <br>
+                    <br>
+                    <button name="9" onclick="wpisz(this)">9</button>
+                    <br>
+                    <br>
+                    <button onclick="usun()">C</button>
+                </div>
+                <div>
+                    <div style="width: 100%; columns: 2;">
+                        <div>
+                            <button name="+" onclick="wpisz(this)">+</button>
+                            <br>
+                            <br>
+                            <button name="*" onclick="wpisz(this)">*</button>
+                        </div>
+                        <div>
+                            <button name="-" onclick="wpisz(this)">-</button>
+                            <br>
+                            <br>
+                            <button name="/" onclick="wpisz(this)">/</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <button onclick="czyscz()">AC</button>
+                    </div>
+                    <br>
+                    <div>
+                        <button onclick="policz()">Policz</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <br>
+
+        <script>
+            eval(init())
+        </script>
+        
+    </body>
+
+</html>

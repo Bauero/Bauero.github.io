@@ -1,7 +1,8 @@
 form
 {
 	background-color: #f9f9f9;
-	padding: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
 	margin: 0 auto;
 	border: 1em solid black;
 }
@@ -22,10 +23,20 @@ label
 	margin-bottom: 5px;
 }
 	
-input[type="text"], input[type="email"], textarea
+input[type="text"], input[type="email"], input[type="tel"], input[type="data"], textarea
 {
 	width: 100%;
 	background-color: #eee;
 	margin-top: 4px;
 	margin-bottom: 8px;
 }
+
+input[type="submit"]{
+	border: 0.1em solid black;
+	font-size: 20;
+	align-self: center;
+	width: 50%;
+	
+}
+
+
