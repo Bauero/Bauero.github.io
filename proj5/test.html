@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two Columns Example</title>
+	<style>
+		.col1 {
+			width: 70%; /* set width for first column */
+			float: left; /* float left so it stays on the left side */
+			background-color: lightblue; /* background color for the first column */
+			padding: 20px; /* add some padding for spacing */
+		}
+		
+		.col2 {
+			width: 30%; /* set width for second column */
+			float: right; /* float right so it stays on the right side */
+			background-color: lightgreen; /* background color for the second column */
+			padding: 20px; /* add some padding for spacing */
+		}
+		
+		.clearfix::after {
+			content: ""; /* add empty content */
+			clear: both; /* clear the floats */
+			display: table; /* display as a table */
+		}
+	</style>
+</head>
+<body>
+	<div>
+        <div class="col1">This is the first column.</div>
+	    <div class="col2">This is the second column.</div>
+    </div>
+	<div class="clearfix"></div>
+</body>
+</html>
