@@ -28,6 +28,7 @@
     if (isset($_POST['wylogoj']))
     {
         session_destroy();
+        header("Location: index.php");
     }
 
 ?>
