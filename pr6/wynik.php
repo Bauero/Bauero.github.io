@@ -80,11 +80,11 @@ if(isset($_POST['stronaLogowania']))
     <div class="wycentrowane">
         <div style="columns: 2;">
             <div>
-                <a href="https://pbosobista.000webhostapp.com/" action=<?php session_destroy();?>>Strona główna</a>
+                <a href="https://pbosobista.000webhostapp.com/" action=<?php session_destroy();?>>Wyloguj i wróć na stronę główną</a>
             </div>
             <div>
                 <form action = "" method="POST">
-                <input name="stronaLogowania" type="submit" value="Powrót na stronę logownaia">
+                <input name="stronaLogowania" type="submit" value="Po prostu wyloguj">
                 </form>
             </div>
         </div>
@@ -107,8 +107,12 @@ if(isset($_POST['stronaLogowania']))
     .
     .
     .
-    href="https://pbosobista.000webhostapp.com/" action=<?php session_destroy();?>>Strona główna
+    href="https://pbosobista.000webhostapp.com/" action= ?php session_destroy();?>
+    Strona główna </>
 
+    form action = "" method="POST">
+    input name="stronaLogowania" type="submit" value="Po prostu wyloguj">
+    /form>
     </pre>
 </body>
 </html>

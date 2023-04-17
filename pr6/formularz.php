@@ -25,6 +25,12 @@
         header("Location: wynik.php");
     }
 
+    if (isset($_POST['wylogoj']))
+    {
+        session_destroy();
+        header("Location: index.php");
+    }
+
 ?>
 
 
@@ -41,6 +47,9 @@
 </head>
     
 <body>
+    <form action="" method="POST">
+        <input type="submit" name="wylogoj" value="wyloguj"></input>
+    </form>
     <form  action="" method="POST">
         <div>
             <label for="name">Imię</label>
