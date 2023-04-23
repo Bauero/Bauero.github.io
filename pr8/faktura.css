@@ -1,0 +1,9 @@
+body
+{
+    background-image: url('faktura.jpg');
+    background-repeat: no-repeat;
+
+    background-size: 1000px auto; /* set the width and height of the image */
+    background-position: left top;
+    overflow: scroll;
+}
