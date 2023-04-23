@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="faktura_render.xslt"?>
+<Dane xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Naglowek>
+    <Miejscowosc>Warszawa</Miejscowosc>
+    <DataWyslania>12.04.2023</DataWyslania>
+  </Naglowek>
+
+  <Sprzedawca>
+    <Nazwa>Rowerowe Marzenie</Nazwa>
+    <Adres>Michalinów, Poldlaska 11, 18-415</Adres>
+    <NIP>474 489 81 11</NIP>
+  </Sprzedawca>
+
+  <Nabywca>
+    <Nazwa>Mordor SP z.o.o</Nazwa>
+    <Adres>Warszawa, Puławska 110</Adres>
+    <NIP>252 234 19 11</NIP>
+  </Nabywca>
+
+
+  <FakturaNumer>FV_0113_04/2023</FakturaNumer>
+
+  <Platnosc>
+    <TerminPlatnosci>10.05.2023</TerminPlatnosci>
+    <NazwaBanku>BNP Pariba</NazwaBanku>
+    <NrKonta>57 6546 6516 6546 6516 6511</NrKonta>
+    <Gotowka>X</Gotowka>
+    <Przelew>X</Przelew>
+    <KartaPlanicza>X</KartaPlanicza>
+    <Waluta>Złoty</Waluta>
+    <KursWaluty>1.00</KursWaluty>
+    <TabelaKursow>87</TabelaKursow>
+    <DataTabeli>12.04.2023</DataTabeli>
+  </Platnosc>
+
+
+  <Usluga>
+    <Index>1</Index>
+    <Tytul>Przygotowanie projektu 5</Tytul>
+    <JM> - </JM>
+    <Ilosc>1</Ilosc>
+    <CenaJednostkowa>1800</CenaJednostkowa>
+    <WartoscTowaru>1800</WartoscTowaru>
+  </Usluga>
+
+  <Usluga>
+  <Index>2</Index>
+    <Tytul>Przygotowanie projektu 6</Tytul>
+    <JM> - </JM>
+    <Ilosc>1</Ilosc>
+    <CenaJednostkowa>2560</CenaJednostkowa>
+    <WartoscTowaru>2560</WartoscTowaru>
+  </Usluga>
+
+  <Usluga>
+  <Index>3</Index>
+    <Tytul>Przygotowanie projektu 7</Tytul>
+    <JM> - </JM>
+    <Ilosc>1</Ilosc>
+    <CenaJednostkowa>3577</CenaJednostkowa>
+    <WartoscTowaru>3577</WartoscTowaru>
+  </Usluga>
+
+  <Zaplata>
+    <Razem>7937,00zł</Razem>
+    <DoZaplaty>7937,00zł</DoZaplaty>
+    <Zaplacono>0,00zł</Zaplacono>
+    <Pozostalo>7937,00zł</Pozostalo>
+    <KwotaSlowna>Siedem Tysięcy Dziewięćset Trzydzieści Siedem złotych</KwotaSlowna>
+  </Zaplata>
+  
+</Dane>
